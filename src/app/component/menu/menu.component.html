@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div>
+      <a (click)="goToHome()" class="nav-link">
+        <img class="img-responsive" src="assets/images/logo.png">
+      </a>
+    </div>
+    <span class="navbar-spacer"></span>
+    <span *ngIf="hardcodedAuthenticationService.isUserLoggedIn()">
+      <button mat-button routerLink="/customers">Customer</button>
+    </span>
+    <span class="flexExpand"></span>
+    <div class="spacer"></div>
+    <div>
+      <button mat-button *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login">Login</button>
+      <button mat-button *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout">Logout</button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

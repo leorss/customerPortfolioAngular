@@ -1,0 +1,4 @@
+/* To make the logo clickable */
+.fill-space {
+  flex: 1 1 auto;
+}

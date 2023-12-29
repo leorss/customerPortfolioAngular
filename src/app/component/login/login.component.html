@@ -1,0 +1,20 @@
+<div class="container login-container">
+  <div class="row justify-content-center">
+    <mat-card class="login-card">
+    <mat-card-content>
+      <h1 class="card-title text-center">Customer Portfolio</h1>
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <input matInput type="text" placeholder="Username" name="username" [(ngModel)]="username">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field appearance="outline">
+          <input matInput type="password" placeholder="Password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" class="btn-block" (click)="handleLogin()">Login</button>
+      <div class="alert alert-warning" *ngIf="!isValidLogin">{{ errorMessage }}</div>
+    </mat-card-content>
+  </mat-card>
+</div>

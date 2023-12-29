@@ -1,0 +1,14 @@
+.container{
+  padding: 30px;
+}
+
+.image-text-container {
+  display: inline-flex; /* You can also use 'inline-block' or 'inline' based on your layout requirements */
+  align-items: center; /* Aligns the image and text vertically */
+}
+
+.image-text-container img {
+  width: 250; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add some spacing between the image and text */
+}
